@@ -1,1 +1,0 @@
-# walter-quispe.github.io
