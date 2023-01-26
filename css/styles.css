@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #c3bba3;
+}
+.dark{
+    background-color: #212121;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 250px;
+    background: rgb(71,71,13);
+    background: linear-gradient(180deg, rgba(71,71,13,1) 0%, rgba(195,187,163,1) 100%);
+    color: black;
+    display: flex;
+    -webkit-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+}
+.mobileImage{
+    display: none;
+}
+.dark1{
+    background: rgb(71,71,13);
+    background: linear-gradient(180deg, rgba(71,71,13,1) 0%, rgba(33,33,33,1) 100%);
+    color: white;
+}
+.titles{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5%;
+    z-index: 1;
+}
+.titles h1{
+    padding: 5px 0 5px 0;
+    font-size: 4rem;
+}
+.titles h3{
+    padding: 5px 0 5px 0;
+}
+.justLine{
+    border: 1px solid black;
+    margin: 30px 5% 30px 0;
+}
+.colorChange{
+    border: 1px solid white;
+}
+.image{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+.infoCv{
+    padding: 5% 5%;
+    width: 100%;
+}
+.sobre{
+    font-size: 1.5rem;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.columna2{
+    border: 1px solid #212121;
+    border-radius: 15px;
+}
+.columna2Dark{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.columna31{
+    border: 1px solid #212121;
+    border-radius: 15px;
+}
+.columna31Dark{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.readMore_btn{
+    background-color: #b3b300;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.list{
+    padding: 0 2%;
+    list-style: none;
+}
+.containerFooter{
+    background-color: #212121;
+}
+.infoFooter{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 3% 0;
+}
+
+
+.imgFooter{
+    display: none;
+}
+// boton switch
+.botonCambioTema{
+    padding: 20px 0 0 0;
+}
+.cambioTema{
+    padding: 25px 5px 0 0;
+}
+.switch-button {
+    display: inline-block;
+    padding: 15px 10px 0 0;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: #47470d;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #c3bba3;
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px #c3bba3;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label{
+    background-color: #212121;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
+}
+
+@media(max-width: 550px){
+    .image{
+        display: none;
+    }
+    .divImgFooter{
+        display: flex;
+        justify-content: center;
+    }
+    .imgFooter{
+        display: block;
+        width: 200px;
+        border-radius: 100px;
+    }
+    .mobileImage{
+        display: block;
+        width: 200px;
+        height: auto;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        z-index: 0;
+        opacity: 0.8;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .columna1{
+        -webkit-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+    }
+    .columna2{
+        padding-top: 20px;
+        border: none;
+    }
+    .columna2Dark{
+        border: none;
+    }
+    .columna3{
+        -webkit-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+    }
+    .columna31{
+        border: none;
+    }
+    .columna31Dark{
+        border: none;
+    }
+}
+@media(max-width: 600px){
+    .justLine{
+        display: none;
+    }
+}

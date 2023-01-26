@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador-CV</title>
+
+    <script src="https://kit.fontawesome.com/71a1cb5d10.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,400;1,700&family=Josefin+Sans:ital,wght@1,300&family=Oswald:wght@500&family=Raleway:wght@100&family=Roboto+Condensed&family=Roboto+Mono:ital,wght@1,500;1,700&family=Roboto:ital,wght@1,300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header" id="headerId">
+        <div class="titles">
+            <h1>Federico Campi</h1>
+            <h3>Desarrollador FrontEnd</h3>
+        </div>
+        <img class='mobileImage' src="./images/mobile.svg">
+        <div class="justLine" id="justLineId">
+        </div>
+        <div class="image">
+            <img src="./images/fotocarne.png">
+        </div>
+        <span class="botonCambioTema" style="display: flex">
+            <i class="fa-solid fa-fill-drip cambioTema"></i>
+            <div class="switch-button">
+                <!-- Checkbox -->
+                <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                <!-- Botón -->
+                <label for="switch-label" class="switch-button__label"></label>
+            </div>
+        </span>
+    </header>
+    <div class="infoCv">
+        <div class="row">
+            <div class="col-sm columna1">
+                <p class="sobre">
+                    <i class="fa-solid fa-address-card fa-flip" style="--fa-animation-duration: 15s"></i> PERFIL PERSONAL</p>
+                <p>
+                    Estudiante de ingeniería en sistemas en la Universidad Tecnológica
+                    Nacional. Actualmente viviendo en Córdoba-Argentina. También soy programador/desarrollador web,
+                    del lado del FrontEnd con ReactJS, e iniciando estudios en backEnd con NodeJS.
+                    <span class="hide" id="hideText">
+                        Pude trabajar en varias áreas, desde servicio de atención al cliente hasta soporte técnico,
+                        aún no tengo experiencia laboral como desarrollador pero tengo bastantes horas prácticas
+                        demostradas en mis proyectos. <a target='_blank' href="https://federicocampi.netlify.app/">Ir a Portfolio</a>.
+                    </span>
+                    <button class="readMore_btn" id="hideText_btn">Leer más</button>
+                </p>
+                <p class="sobre"> <i class="fa-solid fa-gears fa-flip" style="--fa-animation-duration: 20s"></i>
+                    HABILIDADES TÉCNICAS</p>
+                    <ul class="list">
+                        <li>Excelente manejo de sistema operativo Windows.</li>
+                        <li>Conocimientos solidos en desarrollo web frontend:
+                            Html, Css, Sass, Javascript, Bootstrap, responsive design, Git, Github, ReactJs y servicios APIs.</li>
+                        <li>Conocimientos en otras tecnologías: NodeJs, mongoDB, fireBase y materialUI.
+                        </li>
+                        <li>Nivel de inglés: B1.</li>
+                    </ul>
+            </div>
+            <div class="col-sm columna2" id="columna2js">
+                
+                <p class="sobre"><i class="fa-solid fa-briefcase fa-flip" style="--fa-animation-duration: 20s"></i>
+                    EXPERIENCIA LABORAL</p>
+                <p>Soporte Técnico<br>Anexion - 2020</p>
+                <ul class="list">
+                    <li>Soporte técnico de software de forma remota a asesores y
+                        empleados de la empresa.</li>
+                    <li>Instalación y personalización de sistemas a nuevos
+                        empleados.</li>
+                    <li>Creación de usuarios y contraseñas para Login.</li>
+                    <li>Control de datos cargados, verificación y
+                        resolución de problemas.</li>
+                </ul>
+                <p>Representante de Atención al cliente<br>Apex America | 2021 – 2022
+                    Cuenta TARJETA NARANJA</p>
+                <ul class="list">
+                    <li>Gestionar solicitudes y consultas de clientes.</li>
+                    <li>Resolver dudas y brindar soporte.</li>
+                    <li>Modificar datos de cuentas con la previa verificación del cliente.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row columna3 ">
+            <div class="col-sm columna31" id="columna31js">
+                <p class="sobre"><i class="fa-brands fa-creative-commons-nd fa-flip" style="--fa-animation-duration: 15s"></i>
+                    HABILIDADES E INTERESES</p>
+                <ul class="list">
+                    <li>Trabajo colaborativo.</li>
+                    <li>Escucha activa a la hora de realizar una nueva tarea.
+                        Aprendo bastante rápido de forma práctica.</li>
+                    <li>Buena capacidad para relacionarme en distintos entornos de trabajo.</li>
+                    <li>Pensamiento crítico: Buscando la forma de mejorar u optimizar
+                        algo que ya es funcional.</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <p class="sobre"><i class="fa-solid fa-building-columns fa-flip" style="--fa-animation-duration: 15s"></i>
+                    FORMACIÓN ACADEMICA</p>
+                <p>Ingeriería en sistemas: UTN-FRC | 2019 - Actualidad</p>
+                <p>Cursos de desarrollo web: </p>
+                <ul class="list">
+                    <li>Egg | Programación</li>
+                    <li>Udemy | Javascript</li>
+                    <li>CoderHouse | Desarrollo web</li>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="containerFooter">
+            <div class="infoFooter">
+                <div class="divImgFooter">
+                    <img class="imgFooter" src="./images/fotocarne1.png">
+                </div>
+                <h3>Contacto</h3>
+                <p>Email: federicocampi95@gmail.com</p>
+                
+                <p>Linkedin: <a target='_blank' href="https://www.linkedin.com/in/federico-campi">linkedin.com/in/federico-campi</a></p>
+                <p>PortFolio: <a target='_blank' href="https://federicocampi.netlify.app/">https://federicocampi.netlify.app/</a></p>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
